@@ -4,12 +4,14 @@
   "description": "Link1 - https://youtu.be/FgnxcUQ5vho?si=nwj0nSeiyGkXl_Vc Link2 - https://youtu.be/7r4xVDI2vho?si=DJmVQImfGtU5BFiH",
   "main": "sum.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.22.11",
+    "babel-core": "^7.0.0-bridge.0",
     "jest": "^29.6.4"
   },
   "dependencies": {
@@ -20,5 +22,12 @@
     "include": [
       "jest"
     ]
+  },
+  "env": {
+    "test": {
+      "plugins": [
+        "@babel/plugin-transform-modules-commonjs"
+      ]
+    }
   }
 }
