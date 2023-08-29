@@ -1,22 +1,17 @@
-// const Anagram = require('./anagram')
 import Anagram from './anagram';
 
-test('Checking if Anagram function exists - 1', () => {
-    expect(typeof Anagram).toEqual('function');
+test('isAnagram function exists', () => {
+  expect(typeof Anagram).toEqual('function');
 });
 
-test('Checking Anagram strings - 2', () => {
-    expect(Anagram('listen', 'silent')).toBeTruthy();
+test('"cinema" is an anagram of "iceman"', () => {
+  expect(Anagram('cinema', 'iceman')).toBeTruthy();
 });
 
-test('Checking Anagram strings - 3', () => {
-    expect(Anagram('LISTEN', 'silent123')).toBeTruthy();
+test('"Dormitory" is an anagram of "dirty room##"', () => {
+  expect(Anagram('Dormitory', 'dirty room##')).toBeTruthy();
 });
 
-test('Checking Anagram strings - 4', () => {
-    expect(Anagram('list', 'silent')).toBeFalsy();
-});
-
-test('Checking Anagram strings - 5', () => {
-    expect(Anagram('', 'silent')).toBeFalsy();
+test('"Hello" is NOT an anagram of "Aloha"', () => {
+  expect(Anagram('Hello', 'Aloha')).toBeFalsy();
 });

@@ -1,16 +1,16 @@
-// const exp = require('constants');
-// const sum = require('./sum');
+const exp = require('constants');
+const sum = require('./sum');
 
-// test('Adding two numbers', () => {
-//     expect(sum(1,2)).toBe(3);
+test('Adding two numbers', () => {
+    expect(sum(1,2)).toBe(3);
+});
+
+// test('User should be Brad Traversy object', () => {
+//     expect(functions. createUser()).toBe({
+//     firstName: 'Brad',
+//     lastName: 'Traversy'  
+//     })
 // });
-
-// // test('User should be Brad Traversy object', () => {
-// //     expect(functions. createUser()).toBe({
-// //     firstName: 'Brad',
-// //     lastName: 'Traversy'  
-// //     })
-// // });
 
 // test('Testing Regex', () => {
 //     expect('team').not.toMatch(/I/i);
