@@ -1,4 +1,4 @@
-const Anagram = (str1, str2) => formatStr(str1) === formatStr(str2);
+const anagram = (str1, str2) => formatStr(str1) === formatStr(str2);
 
 // Helper function
 const formatStr = (str) =>
@@ -9,4 +9,4 @@ const formatStr = (str) =>
     .sort()
     .join('');
 
-export default Anagram;
+export default anagram;
