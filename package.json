@@ -1,15 +1,19 @@
 {
   "name": "learning_jest",
   "version": "1.0.0",
-  "description": "Link1 - https://youtu.be/FgnxcUQ5vho?si=nwj0nSeiyGkXl_Vc Link2 - https://youtu.be/7r4xVDI2vho?si=DJmVQImfGtU5BFiH",
-  "main": "sum.js",
+  "description": "",
+  "main": "Counter.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.22.11",
+    "@babel/preset-env": "^7.22.14",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^29.6.4",
     "jest": "^29.6.4"
   },
   "dependencies": {
@@ -17,7 +21,7 @@
   },
   "typeAcquisition": {
     "include": [
-        "jest"
+      "jest"
     ]
-}
+  }
 }
